@@ -1,4 +1,4 @@
-const { getKanyeQuote } = require("../adapters/kanye");
+const { getKanyeQuote } = require('../adapters/kanye');
 
 async function handleGetKanyeQuote() {
   const payload = await getKanyeQuote();
@@ -7,5 +7,5 @@ async function handleGetKanyeQuote() {
 }
 
 module.exports = {
-  handleGetKanyeQuote
+  handleGetKanyeQuote,
 };

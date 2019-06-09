@@ -23,6 +23,7 @@ Then("The response body should be an Object", function() {
 });
 
 Then("The response body should have length of one", function() {
-  const length = Object.keys(JSON.parse(this.response.body)).length;
+  const body = JSON.parse(this.response.body);
+  const length = Object.keys(body).length;
   length.should.equal(1);
 });
