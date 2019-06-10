@@ -7,7 +7,7 @@ chai.should();
 
 When('I visit {string}', async function(route) {
   this.response = await rp({
-    url: `${config.thisService.url}`,
+    url: `${config.thisService.url}${route}`,
     method: 'GET',
     resolveWithFullResponse: true,
   });
