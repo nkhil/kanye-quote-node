@@ -8,6 +8,6 @@ Feature: I can see the square of any number
     And the response should be 4
 
     Examples:
-      | route       | status |
-      | '/square?2' | 200    |
+      | route           | status |
+      | '/square?num=2' | 200    |
 
