@@ -5,7 +5,7 @@ const config = require('../config');
 
 chai.should();
 
-When('I visit the {string}', async function(route) {
+When('I visit {string}', async function(route) {
   this.response = await rp({
     url: `${config.thisService.url}`,
     method: 'GET',
