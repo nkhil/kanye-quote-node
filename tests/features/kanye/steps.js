@@ -1,7 +1,7 @@
 const { When, Then, And } = require('cucumber');
 const chai = require('chai');
 const rp = require('request-promise');
-const config = require('../config');
+const config = require('../../config');
 
 chai.should();
 
